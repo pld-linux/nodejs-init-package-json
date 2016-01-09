@@ -1,13 +1,13 @@
 %define		pkg	init-package-json
 Summary:	A node module to get your node module started
 Name:		nodejs-%{pkg}
-Version:	0.0.15
+Version:	0.0.17
 Release:	1
 License:	ISC
 Group:		Development/Libraries
-URL:		https://github.com/isaacs/init-package-json
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	142de6cf5f99432fef3f9c9b0e247a1a
+# Source0-md5:	e5649ebd0ae17cb40160a3d85810c8a7
+URL:		https://github.com/isaacs/init-package-json
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 Requires:	nodejs-glob < 3.3.0
