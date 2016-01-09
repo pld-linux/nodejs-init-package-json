@@ -1,12 +1,12 @@
 %define		pkg	init-package-json
 Summary:	A node module to get your node module started
 Name:		nodejs-%{pkg}
-Version:	0.1.0
+Version:	1.0.0
 Release:	1
 License:	ISC
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	f0af915e8fc62a5c9ee8502b581f7da9
+# Source0-md5:	0debf0d7142d35724d4934fc8e169999
 URL:		https://github.com/isaacs/init-package-json
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
@@ -18,8 +18,8 @@ Requires:	nodejs-read < 1.1.0
 Requires:	nodejs-read >= 1.0.1
 Requires:	nodejs-read-package-json < 2
 Requires:	nodejs-read-package-json >= 1
-Requires:	nodejs-semver <= 3.0.0
-Requires:	nodejs-semver >= 2.0.0
+Requires:	nodejs-semver < 4
+Requires:	nodejs-semver >= 2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
